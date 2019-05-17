@@ -1,5 +1,3 @@
-#include <iostream>
-
 template <typename T> bool resize(T*& oldT, size_t oldsize, size_t newsize, T defaultvalue)
 {
 	size_t biggersize = (oldsize > newsize) ? oldsize : newsize;
@@ -18,6 +16,7 @@ template <typename T> bool resize(T*& oldT, size_t oldsize, size_t newsize, T de
 	return true;
 }
 
+#include <iostream>
 template <typename T,size_t N> void showArray(T arr[N])
 {
 	for(size_t i=0;i<N;i++)
@@ -27,7 +26,7 @@ template <typename T,size_t N> void showArray(T arr[N])
 	std::cout << std::endl;
 	return;
 }
-
+// TESTS
 int main()
 {
 	const size_t initsize = 12;
